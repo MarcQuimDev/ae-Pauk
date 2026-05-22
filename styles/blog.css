@@ -1,0 +1,241 @@
+.main-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.blog-titol {
+    text-align: center;
+    margin: 40px 0 50px;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.blog-titol h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.15em;
+}
+
+.blog-titol p {
+    margin: 8px 0 0;
+    font-size: 1.05rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.entrades-llista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.entrada-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.entrada-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+
+.entrada-foto {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.entrada-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.entrada-info {
+    padding: 22px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.entrada-titol {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: #2c3e50;
+}
+
+.entrada-extracte {
+    margin: 0 0 14px;
+    line-height: 1.55;
+    color: #444;
+    font-size: 0.92rem;
+}
+
+.entrada-llegir {
+    font-size: 0.85rem;
+    color: #6ab04c;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.post {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 40px 50px;
+    margin: 40px 0;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+.post-tornar {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #6ab04c;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.post-tornar:hover {
+    text-decoration: underline;
+}
+
+.post-titol {
+    margin: 0 0 8px;
+    font-size: 2rem;
+    color: #2c3e50;
+    letter-spacing: 0.05em;
+}
+
+.post-data {
+    margin: 0 0 30px;
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 14px;
+}
+
+.post-foto-principal {
+    margin: 0 -50px 30px;
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.post-foto-principal img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.post-contingut p {
+    line-height: 1.75;
+    color: #333;
+    font-size: 1rem;
+    margin: 0 0 18px;
+}
+
+.post-contingut h2 {
+    margin: 30px 0 15px;
+    color: #2c3e50;
+    font-size: 1.4rem;
+}
+
+.post-contingut a {
+    color: #6ab04c;
+    font-weight: bold;
+}
+
+.post-foto {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.post-foto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.post-peu-foto {
+    margin: 8px 0 0;
+    color: #777;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.post-etiquetes {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.etiqueta {
+    background: #6ab04c;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    margin: 20px 0 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carrusel-pista {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carrusel-pista::-webkit-scrollbar { display: none; }
+
+.carrusel-pista img {
+    flex: 0 0 100%;
+    height: 450px;
+    object-fit: contain;
+    scroll-snap-align: start;
+}
+
+.fletxa {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #d0d0d0;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fletxa:hover { color: #fff; }
+
+.fletxa-esq { left: 15px; }
+.fletxa-dre { right: 15px; }
